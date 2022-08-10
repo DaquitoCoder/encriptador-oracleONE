@@ -1,6 +1,6 @@
 const encrypt = () => {
   let inputTexto = document.getElementById('input-texto');
-  let texto = inputTexto.value.toLowerCase();
+  let texto = inputTexto.value;
 
   let textoEncriptado = texto.replace(/e/gi, 'enter').replace(/i/gi, 'imes').replace(/a/gi, 'ai').replace(/o/gi, 'ober').replace(/u/gi, 'ufat');
 
