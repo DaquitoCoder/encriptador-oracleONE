@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <nav>
+      <h1>
+        <a href="index.html">
+          Alura Challenge - Encriptador
+        </a>
+      </h1>
+    </nav>
+
+    <div class="pagina">
+      <div class="form-div">
+        <form action="">
+          <textarea id="input-texto" type="text" name="texto" placeholder="Ingrese aquí el texto"></textarea>
+  
+          <p>&#9432; Solo letras minúsculas y sin acentos</p>
+          <div class="buttons">
+            <input id="btn-encrypt" type="button" value="Encriptar" onclick="encrypt()">
+            <input id="btn-decrypt" type="button" value="Desencriptar" onclick="decrypt()">
+          </div>
+        </form>
+      </div>
+  
+      <div class="result-text">
+        <div class="text">
+          <p id="myInput"></p>
+          <div class="mensaje-predeterminado">
+            <img src="./assets/Muñeco.png" alt="Muñeco">
+            <h2>Ningún mensaje fue encontrado</h2>
+            <p>Ingresa el texto que desees encriptar o desencriptar</p>
+          </div>
+          <button id="btn-copy" onclick="copy()">Copiar</button>
+        </div>
+      </div>
+    </div>
+    
+    <footer>
+      <p>
+        Creado por: <a href="https://www.github.com/Daquitocoder">Juan Alejandro León</a> - 2022
+        <br />
+        Para Oracle ONE - Alura Latam
+      </p>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+/* GENERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Lato, sans-serif;
+}
+
+/* BODY CSS */
+
+body{
+  width: 100%;
+  height: 100vh;
+  background-color: #fdfdfd;
+}
+
+/* NAVBAR */
+
+nav{
+  background-color: #051D3B;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+nav a{
+  text-decoration: none;
+  color: #fff;
+}
+
+/* CUERPO DE LA PÁGINA */
+
+.pagina{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+}
+
+/* TEXT AREA PARA INGRESAR EL TEXTO */
+
+.form-div{
+  grid-column: 1 / 2;
+  grid-row: 1;
+  min-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-div textarea{
+  width: 100%;
+  height: 500px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  resize: none;
+  font-size: 24px;
+}
+
+.form-div textarea::placeholder{
+  color: black;
+}
+
+.form-div textarea:focus{
+  outline: none;
+}
+
+/* TEXTO ENCRIPTADO/DESENCRIPTADO */
+
+.result-text{
+  grid-column: 2 / 2;
+  grid-row: 1;
+  border-radius: 15px;
+  border: 2px solid #ffffff;
+  padding: 20px;
+  min-width: 50%;
+  height: 80vh;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.result-text img{
+  width: 100%;
+}
+
+.text{
+  text-align: center;
+  font-size: 16px;
+  color: #051D3B;
+
+}
+/* BOTONES DEL FORM */
+
+.buttons{
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#myInput{
+  display: none;
+}
+
+#btn-copy{
+  width: 100%;
+  background-color: #e6e6e6;
+  border: 2px solid #051D3B;
+  color: #051D3B;
+  font-size: 24px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#btn-encrypt{
+  width: 100%;
+  background-color: #051D3B;
+  border: none;
+  color: white;
+  font-size: 24px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+#btn-decrypt{
+  width: 100%;
+  background-color: #e6e6e6;
+  border: 2px solid #051D3B;
+  color: #051D3B;
+  font-size: 24px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* FOOTER */
+
+footer{
+  background-color: #051D3B;
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  position: absolute;
+  bottom: 0;
+}
+
+footer a{
+  text-decoration: none;
+  color: #fff;
+}
+
+footer a:hover{
+  color: rgb(209, 209, 209);
+}
+
+@media (max-width: 768px) {
+  .pagina{
+    width: 100%;
+    grid-template-columns: 100%;
+    row-gap: 20px;
+  }
+  .form-div{
+    width: 80%;
+    grid-column: 1;
+    grid-row: 1 / 2;
+  }
+  .result-text{
+    width: 80%;
+    height: 100%;
+    margin-bottom: 20px;
+    grid-column: 1;
+    grid-row: 2 / 2;
+  }
+  footer{
+    position: relative;
+  }
+}
+
+@media (max-width: 425px) {
+  .buttons{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #btn-encrypt{
+    margin: 0;
+  }
+}
